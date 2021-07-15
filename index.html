@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Timmins Lab 4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="images/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="images/s_initial.png" alt="decorative initial S" />
+      <h1>Sabra Timmins</h1>
+      <h2>MSET <span class="shadow">Portfolio</span></h2>
+    </header>
+    <!--<nav id="mobile_menu"></nav>-->
+    <nav id="nav_menu">
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="philosophy.html" class="top_box">Philosophy</a></li>
+        <li><a href="themes.html" class="top_box">Key Themes</a></li>
+        <li><a href="coursework.html" class="top_box">Coursework</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <article>
+          <!--<figure>
+            <picture>
+              <source type="image/webp" srcset="images/st_profile.webp" />-->
+              <img src="images/st_profile.jpg" alt="Timmins Photo" />
+            <!--</picture>
+            <figcaption>Sabra Timmins photo</figcaption>
+          </figure>-->
+          <h2>About Me</h2>
+          <p>I've been an educator for more years than I can count.</p>
+          <p>
+            I started becoming more invested in using technology for teaching
+            when I discovered that I could use it to better serve my adult GED
+            learners who often had to practice math via video chat in the
+            evenings after they put their children to bed.
+          </p>
+          <p>
+            The more doors I could see opening for my students because of
+            effective technology tools, the more I wanted to learn.
+          </p>
+          <p>
+            During the COVID 19 pandemic I continued to find new ways to help my
+            elementary ESOL students access content and community in a virtual
+            way.
+          </p>
+        </article>
+        <h3>At Home</h3>
+        <p>
+          I'm originally from New Hampshire, but came to Virginia for school,
+          fell in love, and never left. My husband and I have raised our three
+          sons in Charlottesville. I enjoy playing and coaching soccer, dancing
+          salsa and weekend bagels and disc golf with my family.
+        </p>
+        <img src="images/family.jpg" alt="Photo Timmins Family" />
+      </section>
+      <aside>
+        <h3>Program Details:</h3>
+        <nav id="nav_dropdown">
+          <ul>
+            <li>
+              <a
+                href="https://dsu.edu/programs/mset/index.html"
+                class="side_box"
+                >About the MSET
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://catalog.dsu.edu/preview_program.php?catoid=32&poid=2342"
+                class="side_box"
+                >View Courses
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://dsu.edu/programs/mset/mset-timelines-requirements.html"
+                class="side_box"
+                >Admission Requirements
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; 2021 Sabra Timmins</p>
+    </footer>
+  </body>
+</html>
