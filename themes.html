@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Themes Timmins Lab 4</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=deive-width, initial-scale=1">
-    <link
-      rel="shortcut icon"
-      type="images/png"
-      href="images/favicon.ico"
-    />
+    <title>Sabra Timmins MSET Portfolio: Themes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="images/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -18,6 +22,7 @@
       <h1>Sabra Timmins</h1>
       <h2>MSET <span class="shadow">Portfolio</span></h2>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
       <ul>
         <li><a href="index.html" class="top_box">Home</a></li>
@@ -28,60 +33,38 @@
     </nav>
     <main>
       <section>
-        <article>
-          <img
-            src="images/esol_website.jpg"
-            width="350"
-            height="403"
-            alt="Timmins Photo"
-          />
-          <h2>Key Themes</h2>
-          <p>This is where I'll include a narrative about how I came to the three themes.  This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes.
-          </p>
-          <p>This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes.
-          </p>
-          <p>
-            Include MSET Objectives that correspond with each theme and products
-          </p>         
-        </article>
-        <h3>OpenDyslexic Font</h3>
-        <img
-          src="images/od_sample.jpg"
-          width="375"
-          height="200"
-          alt="Sample OpenDyslexic Font"
-        />
-        <p>This is where I'll include a narrative about how I came to the three themes.  This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes. This is where I'll include a narrative about how I came to the three themes.
+        <div class="top_container">
+          <div class="box1">
+            <h2>Key Themes</h2>
+            <p>
+              This is where I'll include a narrative about how I came to the
+              three themes. This is where I'll include a narrative about how I
+              came to the three themes. This is where I'll include a narrative
+              about how I came to the three themes. This is where I'll include a
+              narrative about how I came to the three themes.
+            </p>            
+            <p>
+              Include MSET Objectives that correspond with each theme and
+              products
+            </p>
+          </div>
+          <div class="box2">
+            <picture>
+              <source type="image/webp" srcset="images/esol_website.webp" />
+              <img
+                src="images/esol_website.jpg"
+                alt="Web Resources for ESL"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <article>
+        <h3>A Champion</h3>   
+        <p>
+          This is where I'll put a container with 3 children and icons for each theme
         </p>
-      </section>   
-      <aside>
-        <h3>Program Focus:</h3>
-        <nav id="nav_dropdown">
-          <ul>
-            <li>
-              <a
-                href="https://dsu.edu/programs/mset/index.html"
-                class="side_box"
-                >Inclusive Design
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://catalog.dsu.edu/preview_program.php?catoid=32&poid=2342"
-                class="side_box"
-                >Collaborative Patient Problem Solving
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://dsu.edu/programs/mset/mset-timelines-requirements.html"
-                class="side_box"
-                >Project Based Learning
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </aside>  
+      </article>
     </main>
     <footer>
       <p>&copy; 2021 Sabra Timmins</p>

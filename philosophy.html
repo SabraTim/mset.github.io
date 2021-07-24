@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Philosophy Timmins Lab 4</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=deive-width, initial-scale=1">
-    <link
-      rel="shortcut icon"
-      type="images/png"
-      href="images/favicon.ico"
-    />
+    <title>Sabra Timmins MSET Portfolio: Philosophy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="images/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -18,6 +22,7 @@
       <h1>Sabra Timmins</h1>
       <h2>MSET <span class="shadow">Portfolio</span></h2>
     </header>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
       <ul>
         <li><a href="index.html" class="top_box">Home</a></li>
@@ -28,14 +33,9 @@
     </nav>
     <main>
       <section>
-        <article>
-          <img
-            src="images/jchild.jpg"
-            width="200"
-            height="259"
-            alt="child with guinea pig"
-          />
-          <h2>Philosophy Statement</h2>
+        <div class= "top_container">
+          <div class= "box1">
+            <h2>Philosophy Statement</h2>
           <p>
             One of the valuable takeaways from this difficult, global pandemic
             academic year is that it helped many focus on those elements that
@@ -57,21 +57,25 @@
             is taken to establish this first. Students are more invested and
             learn from teachers and fellow classmates that they believe truly
             care about them and their learning.
+          </p> 
+          </div>
+          <div class= "box2">
+            <picture>
+              <source type="image/webp" srcset="images/collaboration.webp" />
+              <img src="images/collaborarion.jpg" alt="Students Working a Puzzle" />
+            </picture>
+          </div>
+        </div>
+        </section>
+     <article>
+        <h3>A Champion</h3>
+        <blockquote>
+          <p>"Every child deserves a champion: an adult who will never give up
+            on them, who understands the power of connection and insists they
+            become the best that they can possibly be." - Rita Pierson,
+            educator
           </p>
-          <blockquote>
-            <p>"Every child deserves a champion: an adult who will never give up
-              on them, who understands the power of connection and insists they
-              become the best that they can possibly be." - Rita Pierson,
-              educator
-            </p>
-          </blockquote>
-        </article>
-        <img
-          src="images/collaboration.jpg"
-          width="200"
-          height="216"
-          alt="students collaborating"
-        />
+        </blockquote>
         <p>Collaboration is an significant skill for today's workplace and the
           future of our planet. It is essential that we teach and foster
           collaboration among our young learners.
@@ -93,7 +97,7 @@
           time, provide a deeper experience or facilitate one that can be more
           easily shared.
         </p>
-      </section>
+      </article>
     </main>
     <footer>
       <p>&copy; 2021 Sabra Timmins</p>

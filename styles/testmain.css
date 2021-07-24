@@ -3,26 +3,13 @@
   margin: 0;
   padding: 0;
 }
-@font-face {
-  font-family: 'opendyslexic';
-	src: url('OpenDyslexic-Regular.ttf');
-	font-style: normal;
-	font-weight: normal;
-} 
 
-@font-face {
-	font-family: 'opendyslexic';
-	src: url('OpenDyslexic-Bold.ttf');
-	font-weight: bold;
-	font-style: normal;
-} 
 html {
   background-color: #ffffff;
 }
 body {
-  color: #0b73b9;
-  font: normal 100%; 
-  font-family: 'opendyslexic'; /*Verdana, Tahoma, sans-serif*/
+  color: #000000;
+  font: normal 100% Verdana, Tahoma, sans-serif;
   width: 98%;
   max-width: 960px;
   margin: 0.5% auto;
@@ -31,11 +18,6 @@ body {
   box-shadow: 5px 5px;
   border-radius: 10px;
   line-height: 1.4em;
-}
-p {
-  word-spacing: .75em;
-  line-height: 1.7em;
-  margin-bottom: 1em; 
 }
 
 /* the styles for the header*/
@@ -127,7 +109,7 @@ a:focus {
 main {
   display: flex;
   flex-direction: column;
-  padding: 1.5% 2% 1.5% 5%;
+  padding: 1.5% 2% 1.5% 5%;  
   margin: 0;
   box-sizing: border-box;
 }
@@ -146,11 +128,8 @@ main h2:first-child::first-letter {
 }
 main h3 {
   font-size: 105%;
-  color: #603791;
+  color: #000000;
   padding-bottom: 0.25em;
-}
-main img {
-  padding-bottom: 1em;
 }
 main p {
   padding-bottom: 0.5em;
@@ -166,51 +145,31 @@ main li {
   padding-bottom: 0.35em;
 }
 
-/* the styles for the section */
+/* the styles for the section*/ 
 section {
   flex-basis: 95%;
-  padding: 0;
-  margin: 2% 1.5% 1.5% 1.5%;
+  padding: 0 0 0 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  border: 2px solid #6699cc;
   box-sizing: border-box;
-  /* border-bottom: 1px solid #000000;*/
-}
-section h2 {
-  color: #603791;
-  font-size: 130%;
-  padding: 0 0 1em 0;
-}
-section h2:first-letter {
-  font: bold 150%;
-}
-.top_container {
-  display: flex;
-  border-left: 2px solid #6699cc;
-}
-.box1 {
-  flex: 2;
-  order: 1;
-  padding: 0 2%;
-  box-sizing: border-box;
-}
-.box2 {
-  display: flex;
-  flex: 1;
-  order: 2;
-  justify-content: center;
-  align-items: center;
 }
 
-/*the styles for the article */
-article {
-  margin: 0 1% 0 3%;
-  border-top: 1px solid #000000;
-  padding-top: 1%;
+.top_container {
+  border: 2px solid fuchsia
 }
-article h3 {
-  padding: .5em 0 1em 0;
+.top_container img {
+  float: right;
 }
-blockquote {
-  font-weight: bold;
+/*#top_container .box_1 {
+  border: 2px solid yellow
+}
+#top_container .box_2 {
+  border: 2px solid black
+}*/
+
+.bottom_container {
+  border: 2px solid green
 }
 
 /*the styles for the footer */
@@ -238,8 +197,7 @@ footer p {
   section h1 {
     font-size: 135%;
   }
-  section h2,
-  aside h2 {
+  section h2, aside h2 {
     font-size: 120%;
   }
 }
@@ -253,6 +211,21 @@ footer p {
     max-width: 17%;
     height: auto;
   }
+  section {
+    width: 95%;
+    border-left: 0;
+    order: 1;
+  }
+  aside {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    order: 2;
+  }
+  #nav_list .side_box {
+    padding: 2%;
+    justify-content: center;
+  }
   main {
     flex-direction: column;
   }
@@ -265,28 +238,14 @@ footer p {
   .slicknav_menu {
     background-color: #8657bf !important;
   }
-  section {
-    width: 95%;
-    border-left: 0;
-  }
-  .top_container {
-    display: flex;
-    flex-direction: column;
-    border: 0;
-  }
-  .box1 {
-    order: 1;
-  }
-  .box2 {    
-    order: 2;
-    align-items: flex-start;
-    padding-top: 1%;
-  }
-  article picture {
-    max-width: 50%;
-    height: auto;
-    order: 3;
-  }
+  section img {
+  max-width: 90%;
+  height: auto;
+}
+  section article img{
+  max-width: 50%;
+  height: auto;
+}
 }
 
 @media only screen and (max-width: 479px) {
