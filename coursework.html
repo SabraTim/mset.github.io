@@ -6,16 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="images/png" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/slicknav.css" />
-    <link rel="stylesheet" href="acordion/jquery-ui.min.css" />
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
-      });
-    </script>
+    <link rel="stylesheet" href="accordion/jquery-ui.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header>
@@ -266,16 +259,23 @@
             <p>Summer 2021 with various instructors (Grade = )</p>
           </div>
         </div>
-        <script src="jquery-3.5.1.min.js"></script>
-        <script src="jquery-ui.min.js"></script>
+        <script src="accordion/jquery-3.5.1.min.js"></script>
         <script>
           $(document).ready(() => {
             $("#accordion").accordion({
               event: "click",
               heightStyle: "content",
               collapsible: true,
-            });
-          });
+            })
+
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" })
+          })
+        </script>
+
+        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+          
         </script>
       </article>
     </main>
