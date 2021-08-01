@@ -184,18 +184,19 @@ section h2 {
   color: #603791;
   font-size: 130%;
   padding: 0 0 1em 0;
+  font-weight: 900;
 }
 section h2:first-letter {
   font: bold 150%;
 }
 .top_container {
   display: flex;
-  border-left: 2px solid #6699cc;
 }
 .box1 {
   flex: 2;
   order: 1;
-  padding: 0 2%;
+  padding: 2% 3% 0 5%;
+  border-left: 2px solid #6699cc;
   box-sizing: border-box;
 }
 .box2 {
@@ -208,12 +209,14 @@ section h2:first-letter {
 
 /*the styles for the article */
 article {
-  margin: 0 1% 0 3%;
+  margin: 1% 3% 2% 6.5%;
   border-top: 1px solid #000000;
-  padding-top: 1%;
+ 
+
 }
 article h3 {
-  padding: .5em 0 1em 0;
+  padding: 1.5em 0 1em 0;
+  font-weight: 900;
 }
 blockquote {
   font-weight: bold;
