@@ -171,6 +171,7 @@ main ul {
 }
 main li {
   padding-bottom: 0.35em;
+  line-height: 1.75em;
 }
 
 /* the styles for the section */
