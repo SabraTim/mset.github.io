@@ -84,6 +84,17 @@
             instructional programs;
           </li>
         </ul>
+        <script>
+          $(document).ready(() => {
+            $("#accordion").accordion({
+              event: "click",
+              heightStyle: "content",
+              collapsible: true,
+            });
+
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+          });
+        </script>
       </article>
     </main>
     <footer>

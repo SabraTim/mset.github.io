@@ -62,6 +62,17 @@
           sons in Charlottesville. I enjoy playing and coaching soccer, dancing
           salsa and weekend bagels and disc golf with my family.
         </p>
+        <script>
+          $(document).ready(() => {
+            $("#accordion").accordion({
+              event: "click",
+              heightStyle: "content",
+              collapsible: true,
+            });
+
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+          });
+        </script>
       </article>
     </main>
     <footer>

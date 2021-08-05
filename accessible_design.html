@@ -143,6 +143,17 @@
           </li>
           <li>leaders in educational technology;</li>
         </ul>
+        <script>
+          $(document).ready(() => {
+            $("#accordion").accordion({
+              event: "click",
+              heightStyle: "content",
+              collapsible: true,
+            });
+
+            $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+          });
+        </script>
       </article>
     </main>
     <footer>
